@@ -140,12 +140,28 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     }
+    // function showLoadingIndicator() {
+    //   const loadingIndicator = document.createElement('div');
+    //   loadingIndicator.classList.add('loading');
+    //   loadingIndicator.textContent = 'Loading...';
+    //   document.body.appendChild(loadingIndicator);
+    // }
+
     function showLoadingIndicator() {
       const loadingIndicator = document.createElement('div');
       loadingIndicator.classList.add('loading');
-      loadingIndicator.textContent = 'Loading...';
+    
+      // Create an img element for the gif
+      const loadingImage = document.createElement('img');
+      loadingImage.src = 'comps/load.gif'; // replace with your gif path
+      loadingImage.alt = 'Loading...';
+    
+      // Append the img to the loadingIndicator
+      loadingIndicator.appendChild(loadingImage);
+    
       document.body.appendChild(loadingIndicator);
     }
+
     function hideLoadingIndicator() {
       const loadingIndicator = document.querySelector('.loading');
       if (loadingIndicator) {
