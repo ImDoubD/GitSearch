@@ -74,6 +74,7 @@ body{
     flex-direction: column;
     gap: 5px;
 }
+
 .perpageinput{
     min-width: 170px;
 }
@@ -110,6 +111,11 @@ body{
     border-radius: 20px;
     border: 1px solid white;
     box-sizing: border-box;
+}
+.submit{
+    border: 2px solid white;
+    background-color: hwb(220 22% 12%);
+    padding: 5px;
 }
 .twrapper{
     display: flex;
