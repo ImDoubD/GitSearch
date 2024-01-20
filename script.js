@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-
     let username;
     let perPage = 10;
     let currentPage = 1;
@@ -9,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
       fetch(`https://api.github.com/users/${username}`)
         .then(response => {
           if (!response.ok) {
-            throw new Error('User not found');
+            throw new Error('No Such User!!');
           }
           return response.json();
         })
